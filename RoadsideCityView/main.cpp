@@ -258,7 +258,7 @@ void myDisplay(void){
     glVertex2i(1500,250);
     glEnd();
 
-    //building 1
+    //building 1 //Center back House
     glColor3f(0.69,0.69,0.498);//body
     glBegin(GL_QUADS);
     glVertex2i(615,310);
@@ -431,7 +431,7 @@ void myDisplay(void){
     glVertex2i(727,415);
     glEnd();
 
-    //building 2
+    //building 2 //Center-Right house
     glColor3f(0.788,0.76,0.6);
     glBegin(GL_QUADS);
     glVertex2i(880,275);
@@ -643,7 +643,7 @@ void myDisplay(void){
 
     glEnd();
 
-    //building 3
+    //building 3 //Center front house
     glColor3f(0.93,0.88,0.77);
     glBegin(GL_QUADS);
     glVertex2i(625,260);
@@ -797,7 +797,7 @@ void myDisplay(void){
     glVertex2i(885,410);
     glEnd();
 
-    //building 4
+    //building 4 //Black House Left
     glColor3f(0.322,0.318,0.318);
     glBegin(GL_QUADS);
     glVertex2i(125,260);
@@ -1090,7 +1090,7 @@ void myDisplay(void){
     glVertex2i(255,375);
     glEnd();
 
-    //building 5
+    //building 5 (Hospital)
     glColor3f(0.96,0.96,0.96);//white
     glBegin(GL_QUADS);
     glVertex2i(1100,315);
@@ -1231,6 +1231,14 @@ void myDisplay(void){
     glVertex2i(1270,270);
     glEnd();
 
+    glColor3f(0,0,0);
+    glLineWidth(1);
+    glBegin(GL_LINES);
+    glVertex2i(1250,309);
+    glVertex2i(1250,271);
+    glEnd();
+
+    glColor3f(1,1,1);
     glBegin(GL_QUADS);//Window background
     glVertex2i(1123,278);
     glVertex2i(1123,307);
