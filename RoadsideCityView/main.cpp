@@ -30,10 +30,10 @@ void myDisplay(void){
     //grass
     glColor3f(0.05,0.8,0.31);
     glBegin(GL_QUADS);
-    glVertex2i(0,0);
+    glVertex2i(0,145);
     glVertex2i(0,170);
     glVertex2i(1500,170);
-    glVertex2i(1500,0);
+    glVertex2i(1500,145);
     glEnd();
 
     glBegin(GL_QUADS);
@@ -59,10 +59,10 @@ void myDisplay(void){
     glVertex2i(1500,180);
 
     glBegin(GL_QUADS);
-    glVertex2i(930,145);
+    glVertex2i(930,150);
     glVertex2i(925,180);
     glVertex2i(1325,180);
-    glVertex2i(1355,145);
+    glVertex2i(1355,150);
 
     glBegin(GL_QUADS);
     glVertex2i(433,250);
@@ -256,6 +256,206 @@ void myDisplay(void){
     glVertex2i(554,260);
     glVertex2i(1500,260);
     glVertex2i(1500,250);
+    glEnd();
+
+    //foot path for walk
+    glColor3f(0.75,0.78,0.75);
+    glBegin(GL_QUADS);
+    glVertex2i(0,115);
+    glVertex2i(0,145);
+    glVertex2i(1500,145);
+    glVertex2i(1500,115);
+    glEnd();
+
+    glColor3f(0.314,0.329,0.349);
+    glLineWidth(0.5);
+    glBegin(GL_LINES);
+    glVertex2i(0,135);
+    glVertex2i(1500,135);
+
+    glVertex2i(0,125);
+    glVertex2i(1500,125);
+    glEnd();
+
+    //side relling
+    glColor3f(0.36,0.35,0.35);
+    glLineWidth(4);
+    glBegin(GL_LINES);
+    glVertex2i(0,130);
+    glVertex2i(1200,130);
+
+    glVertex2i(1300,130);
+    glVertex2i(1500,130);
+
+    glVertex2i(40,115);//
+    glVertex2i(40,130);
+
+    glVertex2i(80,115);
+    glVertex2i(80,130);
+
+    glVertex2i(120,115);
+    glVertex2i(120,130);
+
+    glVertex2i(160,115);
+    glVertex2i(160,130);
+
+    glVertex2i(200,115);
+    glVertex2i(200,130);
+
+    glVertex2i(240,115);
+    glVertex2i(240,130);
+
+    glVertex2i(280,115);
+    glVertex2i(280,130);
+
+    glVertex2i(320,115);
+    glVertex2i(320,130);
+
+    glVertex2i(360,115);
+    glVertex2i(360,130);
+
+    glVertex2i(400,115);
+    glVertex2i(400,130);
+
+    glVertex2i(440,115);
+    glVertex2i(440,130);
+
+    glVertex2i(480,115);
+    glVertex2i(480,130);
+
+    glVertex2i(520,115);
+    glVertex2i(520,130);
+
+    glVertex2i(560,115);
+    glVertex2i(560,130);
+
+    glVertex2i(600,115);
+    glVertex2i(600,130);
+
+    glVertex2i(640,115);
+    glVertex2i(640,130);
+
+    glVertex2i(680,115);
+    glVertex2i(680,130);
+
+    glVertex2i(720,115);
+    glVertex2i(720,130);
+
+    glVertex2i(760,115);
+    glVertex2i(760,130);
+
+    glVertex2i(800,115);
+    glVertex2i(800,130);
+
+    glVertex2i(840,115);
+    glVertex2i(840,130);
+
+    glVertex2i(880,115);
+    glVertex2i(880,130);
+
+    glVertex2i(920,115);
+    glVertex2i(920,130);
+
+    glVertex2i(960,115);
+    glVertex2i(960,130);
+
+    glVertex2i(1000,115);
+    glVertex2i(1000,130);
+
+    glVertex2i(1040,115);
+    glVertex2i(1040,130);
+
+    glVertex2i(1080,115);
+    glVertex2i(1080,130);
+
+    glVertex2i(1120,115);
+    glVertex2i(1120,130);
+
+    glVertex2i(1160,115);
+    glVertex2i(1160,130);
+
+    glVertex2i(1197,115);
+    glVertex2i(1197,130);
+
+    glVertex2i(1303,115);
+    glVertex2i(1303,130);
+
+    glVertex2i(1340,115);
+    glVertex2i(1340,130);
+
+    glVertex2i(1380,115);
+    glVertex2i(1380,130);
+
+    glVertex2i(1420,115);
+    glVertex2i(1420,130);
+
+    glVertex2i(1460,115);
+    glVertex2i(1460,130);
+    glEnd();
+
+    //side seat
+    glBegin(GL_QUADS);//1
+    glVertex2i(730,150);
+    glVertex2i(730,160);
+    glVertex2i(770,160);
+    glVertex2i(770,150);
+    glEnd();
+
+    glBegin(GL_QUADS);//2
+    glVertex2i(430,150);
+    glVertex2i(430,160);
+    glVertex2i(470,160);
+    glVertex2i(470,150);
+    glEnd();
+
+    glBegin(GL_QUADS);//3
+    glVertex2i(130,150);
+    glVertex2i(130,160);
+    glVertex2i(170,160);
+    glVertex2i(170,150);
+    glEnd();
+
+    glBegin(GL_QUADS);//4
+    glVertex2i(1380,150);
+    glVertex2i(1380,160);
+    glVertex2i(1420,160);
+    glVertex2i(1420,150);
+    glEnd();
+
+    glLineWidth(5);
+    glBegin(GL_LINES);
+    glVertex2i(735,150);//1
+    glVertex2i(735,145);
+
+    glVertex2i(765,150);
+    glVertex2i(765,145);
+
+    glVertex2i(435,150);//2
+    glVertex2i(435,145);
+
+    glVertex2i(465,150);
+    glVertex2i(465,145);
+
+    glVertex2i(135,150);//3
+    glVertex2i(135,145);
+
+    glVertex2i(165,150);
+    glVertex2i(165,145);
+
+    glVertex2i(1385,150);//4
+    glVertex2i(1385,145);
+
+    glVertex2i(1415,150);
+    glVertex2i(1415,145);
+    glEnd();
+
+    //water
+    glColor3f(0.165,0.478,0.722);
+    glBegin(GL_QUADS);
+    glVertex2i(0,90);
+    glVertex2i(0,0);
+    glVertex2i(1500,0);
+    glVertex2i(1500,90);
     glEnd();
 
     //building 1 //Center back House
