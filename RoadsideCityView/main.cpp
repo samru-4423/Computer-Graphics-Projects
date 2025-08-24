@@ -17,6 +17,20 @@ void Sprint( float x, float y, char *st)//Text
     }
 }
 
+void circle(float x, float y , float r ){
+	glBegin(GL_POLYGON);
+	for(int i=0;i<360;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/180 ;
+
+		float dx = r * cos(A);
+		float dy = r * sin(A);
+		glVertex2f(x+dx,y+dy );
+	}
+	glEnd();
+}
+
 void myDisplay(void){
     glClear (GL_COLOR_BUFFER_BIT);
     glColor3f(0.529,0.807,0.922);
@@ -946,7 +960,159 @@ void myDisplay(void){
 
     glEnd();
 
-    //building 3 //Center front house
+    //building 3 //Center middle house
+    glColor3f(0.14,0.26,0.41);
+    glBegin(GL_QUADS);
+    glVertex2i(610,290);
+    glVertex2i(610,470);
+    glVertex2i(870,470);
+    glVertex2i(870,290);
+
+    glBegin(GL_QUADS);
+    glVertex2i(605,470);
+    glVertex2i(605,490);
+    glVertex2i(875,490);
+    glVertex2i(875,470);
+    glEnd();
+
+    glColor3f(1,1,1);
+    glLineWidth(1);
+    glBegin(GL_LINES);
+    glVertex2i(610,290);
+    glVertex2i(610,470);
+
+    glVertex2i(870,470);
+    glVertex2i(870,290);
+
+    glVertex2i(605,470);
+    glVertex2i(875,470);
+
+    glVertex2i(605,490);
+    glVertex2i(875,490);
+
+    glVertex2i(605,470);
+    glVertex2i(605,490);
+
+    glVertex2i(875,470);
+    glVertex2i(875,490);
+
+    glVertex2i(610,335);
+    glVertex2i(870,335);
+
+    glVertex2i(610,380);
+    glVertex2i(870,380);
+
+    glVertex2i(610,425);
+    glVertex2i(870,425);
+    glEnd();
+
+    glColor3f(1,1,1);
+    glBegin(GL_QUADS);
+    glVertex2i(735,290);//center border
+    glVertex2i(735,470);
+    glVertex2i(745,470);
+    glVertex2i(745,290);
+
+    glBegin(GL_QUADS);//left window background
+    glVertex2i(623,433);
+    glVertex2i(623,462);
+    glVertex2i(718,462);
+    glVertex2i(718,433);
+
+    glBegin(GL_QUADS);
+    glVertex2i(623,388);
+    glVertex2i(623,417);
+    glVertex2i(718,417);
+    glVertex2i(718,388);
+
+    glBegin(GL_QUADS);
+    glVertex2i(623,343);
+    glVertex2i(623,372);
+    glVertex2i(718,372);
+    glVertex2i(718,343);
+
+    glBegin(GL_QUADS);
+    glVertex2i(623,298);
+    glVertex2i(623,327);
+    glVertex2i(718,327);
+    glVertex2i(718,298);
+
+    glBegin(GL_QUADS);//right window background
+    glVertex2i(758,433);
+    glVertex2i(758,462);
+    glVertex2i(857,462);
+    glVertex2i(857,433);
+
+    glBegin(GL_QUADS);
+    glVertex2i(758,388);
+    glVertex2i(758,417);
+    glVertex2i(857,417);
+    glVertex2i(857,388);
+
+    glBegin(GL_QUADS);
+    glVertex2i(758,343);
+    glVertex2i(758,372);
+    glVertex2i(857,372);
+    glVertex2i(857,343);
+
+    glBegin(GL_QUADS);
+    glVertex2i(758,298);
+    glVertex2i(758,327);
+    glVertex2i(857,327);
+    glVertex2i(857,298);
+    glEnd();
+
+    glColor3f(0.28,0.43,0.93);
+    glBegin(GL_QUADS);//left window
+    glVertex2i(625,435);
+    glVertex2i(625,460);
+    glVertex2i(716,460);
+    glVertex2i(716,435);
+
+    glBegin(GL_QUADS);
+    glVertex2i(625,390);
+    glVertex2i(625,415);
+    glVertex2i(716,415);
+    glVertex2i(716,390);
+
+    glBegin(GL_QUADS);
+    glVertex2i(625,345);
+    glVertex2i(625,370);
+    glVertex2i(716,370);
+    glVertex2i(716,345);
+
+    glBegin(GL_QUADS);
+    glVertex2i(625,300);
+    glVertex2i(625,325);
+    glVertex2i(716,325);
+    glVertex2i(716,300);
+
+    glBegin(GL_QUADS);//right window
+    glVertex2i(760,435);
+    glVertex2i(760,460);
+    glVertex2i(855,460);
+    glVertex2i(855,435);
+
+    glBegin(GL_QUADS);
+    glVertex2i(760,390);
+    glVertex2i(760,415);
+    glVertex2i(855,415);
+    glVertex2i(855,390);
+
+    glBegin(GL_QUADS);
+    glVertex2i(760,345);
+    glVertex2i(760,370);
+    glVertex2i(855,370);
+    glVertex2i(855,345);
+
+    glBegin(GL_QUADS);
+    glVertex2i(760,300);
+    glVertex2i(760,325);
+    glVertex2i(855,325);
+    glVertex2i(855,300);
+    glEnd();
+
+    //building 4 //Center front house
     glColor3f(0.93,0.88,0.77);
     glBegin(GL_QUADS);
     glVertex2i(625,260);
@@ -1100,7 +1266,7 @@ void myDisplay(void){
     glVertex2i(885,410);
     glEnd();
 
-    //building 4 (Left back house)
+    //building 5 (Left back house)
     glColor3f(0.86,0.86,0.86);
     glBegin(GL_QUADS);
     glVertex2i(40,285);
@@ -1684,7 +1850,7 @@ void myDisplay(void){
     Sprint(180,632,text1);
     glEnd();
 
-    //building 5 //Black House Left
+    //building 6 //Black House Left
     glColor3f(0.322,0.318,0.318);
     glBegin(GL_QUADS);
     glVertex2i(125,260);
@@ -1741,7 +1907,7 @@ void myDisplay(void){
     glVertex2i(135,430);
     glEnd();
 
-    //building 4 borders
+    //building 6 borders
     glColor3f(1,1,1);
     glLineWidth(0.2);
     glBegin(GL_LINES);
@@ -1977,7 +2143,7 @@ void myDisplay(void){
     glVertex2i(255,375);
     glEnd();
 
-    //building 6 (Right corner)
+    //building 7 (Right corner)
     glColor3f(0.45,0.29,0.157);
     glBegin(GL_QUADS);
     glVertex2i(1405,265);
@@ -2346,7 +2512,7 @@ void myDisplay(void){
     glVertex2i(1452,299);
     glEnd();
 
-    //building 7 (Hospital)
+    //building 8 (Hospital)
     glColor3f(0.96,0.96,0.96);//white
     glBegin(GL_QUADS);
     glVertex2i(1100,315);
@@ -2585,7 +2751,42 @@ void myDisplay(void){
     Sprint(1225,377,text);
     glEnd();
 
+    glColor3f(0.51,0.13,0.004);//tree
+    glBegin(GL_QUADS);//1
+    glVertex2i(830,160);
+    glVertex2i(830,210);
+    glVertex2i(845,210);
+    glVertex2i(845,160);
+    glEnd();
 
+    glBegin(GL_TRIANGLES);//1
+    glVertex2i(830,160);
+    glVertex2i(820,155);
+    glVertex2i(840,160);
+
+    glBegin(GL_TRIANGLES);
+    glVertex2i(845,160);
+    glVertex2i(855,155);
+    glVertex2i(835,160);
+
+    glBegin(GL_TRIANGLES);
+    glVertex2i(835,160);
+    glVertex2i(837,150);
+    glVertex2i(840,160);
+    glEnd();
+
+    glColor3f(0.03,0.46,0.17);
+    circle(825,215,13);//1
+    circle(850,215,13);
+    circle(865,222,13);
+    circle(810,222,13);
+    circle(817,236,13);
+    circle(858,236,13);
+    circle(826,250,13);
+    circle(849,250,13);
+    circle(837,265,13);
+    circle(837,228,16);
+    glEnd();
 
     glFlush();
 }
