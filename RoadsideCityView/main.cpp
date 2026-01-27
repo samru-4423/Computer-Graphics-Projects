@@ -2759,6 +2759,55 @@ void myDisplay(void){
     glVertex2i(845,160);
     glEnd();
 
+    glBegin(GL_QUADS);//2
+    glVertex2i(600,160);
+    glVertex2i(600,210);
+    glVertex2i(615,210);
+    glVertex2i(615,160);
+    glEnd();
+
+    glBegin(GL_QUADS);//3
+    glVertex2i(390,160);
+    glVertex2i(390,210);
+    glVertex2i(405,210);
+    glVertex2i(405,160);
+    glEnd();
+
+    glBegin(GL_QUADS);//4
+    glVertex2i(190,160);
+    glVertex2i(190,210);
+    glVertex2i(205,210);
+    glVertex2i(205,160);
+    glEnd();
+
+    glBegin(GL_QUADS);//5
+    glVertex2i(50,160);
+    glVertex2i(50,210);
+    glVertex2i(65,210);
+    glVertex2i(65,160);
+    glEnd();
+
+    glBegin(GL_QUADS);//6
+    glVertex2i(1450,160);
+    glVertex2i(1450,210);
+    glVertex2i(1465,210);
+    glVertex2i(1465,160);
+    glEnd();
+
+    glBegin(GL_QUADS);//7
+    glVertex2i(1030,265);
+    glVertex2i(1030,315);
+    glVertex2i(1045,315);
+    glVertex2i(1045,265);
+    glEnd();
+
+    glBegin(GL_QUADS);//8
+    glVertex2i(40,265);
+    glVertex2i(40,315);
+    glVertex2i(55,315);
+    glVertex2i(55,265);
+    glEnd();
+
     glBegin(GL_TRIANGLES);//1
     glVertex2i(830,160);
     glVertex2i(820,155);
@@ -2775,6 +2824,118 @@ void myDisplay(void){
     glVertex2i(840,160);
     glEnd();
 
+    glBegin(GL_TRIANGLES);//2
+    glVertex2i(600,160);
+    glVertex2i(590,155);
+    glVertex2i(610,160);
+
+    glBegin(GL_TRIANGLES);
+    glVertex2i(615,160);
+    glVertex2i(625,155);
+    glVertex2i(605,160);
+
+    glBegin(GL_TRIANGLES);
+    glVertex2i(605,160);
+    glVertex2i(607,150);
+    glVertex2i(610,160);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);//3
+    glVertex2i(390,160);
+    glVertex2i(380,155);
+    glVertex2i(400,160);
+
+    glBegin(GL_TRIANGLES);
+    glVertex2i(405,160);
+    glVertex2i(415,155);
+    glVertex2i(395,160);
+
+    glBegin(GL_TRIANGLES);
+    glVertex2i(395,160);
+    glVertex2i(397,150);
+    glVertex2i(400,160);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);//4
+    glVertex2i(190,160);
+    glVertex2i(180,155);
+    glVertex2i(200,160);
+
+    glBegin(GL_TRIANGLES);
+    glVertex2i(205,160);
+    glVertex2i(215,155);
+    glVertex2i(195,160);
+
+    glBegin(GL_TRIANGLES);
+    glVertex2i(195,160);
+    glVertex2i(197,150);
+    glVertex2i(200,160);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);//5
+    glVertex2i(50,160);
+    glVertex2i(40,155);
+    glVertex2i(60,160);
+
+    glBegin(GL_TRIANGLES);
+    glVertex2i(65,160);
+    glVertex2i(75,155);
+    glVertex2i(55,160);
+
+    glBegin(GL_TRIANGLES);
+    glVertex2i(55,160);
+    glVertex2i(57,150);
+    glVertex2i(60,160);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);//6
+    glVertex2i(1450,160);
+    glVertex2i(1440,155);
+    glVertex2i(1460,160);
+
+    glBegin(GL_TRIANGLES);
+    glVertex2i(1465,160);
+    glVertex2i(1475,155);
+    glVertex2i(1455,160);
+
+    glBegin(GL_TRIANGLES);
+    glVertex2i(1455,160);
+    glVertex2i(1457,150);
+    glVertex2i(1460,160);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);//7
+    glVertex2i(1030,265);
+    glVertex2i(1020,260);
+    glVertex2i(1040,265);
+
+    glBegin(GL_TRIANGLES);
+    glVertex2i(1045,265);
+    glVertex2i(1055,260);
+    glVertex2i(1035,265);
+
+    glBegin(GL_TRIANGLES);
+    glVertex2i(1035,265);
+    glVertex2i(1037,255);
+    glVertex2i(1040,265);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);//8
+    glVertex2i(40,265);
+    glVertex2i(30,260);
+    glVertex2i(50,265);
+
+    glBegin(GL_TRIANGLES);
+    glVertex2i(55,265);
+    glVertex2i(65,260);
+    glVertex2i(45,265);
+
+    glBegin(GL_TRIANGLES);
+    glVertex2i(45,265);
+    glVertex2i(47,255);
+    glVertex2i(50,265);
+    glEnd();
+
     glColor3f(0.03,0.46,0.17);
     circle(825,215,13);//1
     circle(850,215,13);
@@ -2786,6 +2947,88 @@ void myDisplay(void){
     circle(849,250,13);
     circle(837,265,13);
     circle(837,228,16);
+
+    circle(595,215,13);//2 600
+    circle(620,215,13);
+    circle(635,222,13);
+    circle(580,222,13);
+    circle(587,236,13);
+    circle(628,236,13);
+    circle(596,250,13);
+    circle(619,250,13);
+    circle(607,265,13);
+    circle(607,228,16);
+
+    circle(385,215,13);//3 390
+    circle(410,215,13);
+    circle(425,222,13);
+    circle(370,222,13);
+    circle(377,236,13);
+    circle(418,236,13);
+    circle(386,250,13);
+    circle(409,250,13);
+    circle(397,265,13);
+    circle(397,228,16);
+    glEnd();
+
+    circle(185,215,13);//4 190
+    circle(210,215,13);
+    circle(225,222,13);
+    circle(170,222,13);
+    circle(177,236,13);
+    circle(218,236,13);
+    circle(186,250,13);
+    circle(209,250,13);
+    circle(197,265,13);
+    circle(197,228,16);
+    glEnd();
+
+    circle(45,215,13);//5 50
+    circle(70,215,13);
+    circle(85,222,13);
+    circle(30,222,13);
+    circle(37,236,13);
+    circle(78,236,13);
+    circle(46,250,13);
+    circle(69,250,13);
+    circle(57,265,13);
+    circle(57,228,16);
+    glEnd();
+
+    circle(1445,215,13);//6 210
+    circle(1470,215,13);
+    circle(1485,222,13);
+    circle(1430,222,13);
+    circle(1437,236,13);
+    circle(1478,236,13);
+    circle(1446,250,13);
+    circle(1469,250,13);
+    circle(1457,265,13);
+    circle(1457,228,16);
+    glEnd();
+
+    circle(1025,320,13);//7 1030
+    circle(1050,320,13);
+    circle(1065,327,13);
+    circle(1010,327,13);
+    circle(1017,341,13);
+    circle(1058,341,13);
+    circle(1026,355,13);
+    circle(1049,355,13);
+    circle(1037,370,13);
+    circle(1037,333,16);
+    glEnd();
+
+    circle(35,320,13);//7 40
+    circle(60,320,13);
+    circle(75,327,13);
+    circle(20,327,13);
+    circle(27,341,13);
+    circle(68,341,13);
+    circle(36,355,13);
+    circle(59,355,13);
+    circle(47,370,13);
+    circle(47,333,16);
     glEnd();
 
     glFlush();
