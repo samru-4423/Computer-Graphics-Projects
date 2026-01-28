@@ -210,6 +210,9 @@ void myDisplay(void){
     glVertex2i(0,190);
     glVertex2i(925,190);
 
+    glVertex2i(1320,190);
+    glVertex2i(1500,190);
+
     glVertex2i(940,180);
     glVertex2i(1310,180);
     glEnd();
@@ -279,6 +282,15 @@ void myDisplay(void){
 
     glVertex2i(537,260);
     glVertex2i(552,275);
+
+    glVertex2i(522,285); // top inner line
+    glVertex2i(530,295);
+
+    glVertex2i(534,300);
+    glVertex2i(542,310);
+
+    glVertex2i(547,315);
+    glVertex2i(552,320);
     glEnd();//
 
     glLineWidth(2);
@@ -1851,7 +1863,8 @@ void myDisplay(void){
     glEnd();
 
     //building 6 //Black House Left
-    glColor3f(0.322,0.318,0.318);
+    //glColor3f(0.322,0.318,0.318);
+    glColor3f(0.17,0.29,0.2);
     glBegin(GL_QUADS);
     glVertex2i(125,260);
     glVertex2i(125,410);
@@ -2796,15 +2809,15 @@ void myDisplay(void){
 
     glBegin(GL_QUADS);//7
     glVertex2i(1030,265);
-    glVertex2i(1030,315);
-    glVertex2i(1045,315);
+    glVertex2i(1030,305);
+    glVertex2i(1045,305);
     glVertex2i(1045,265);
     glEnd();
 
     glBegin(GL_QUADS);//8
     glVertex2i(40,265);
-    glVertex2i(40,315);
-    glVertex2i(55,315);
+    glVertex2i(40,305);
+    glVertex2i(55,305);
     glVertex2i(55,265);
     glEnd();
 
@@ -2916,7 +2929,7 @@ void myDisplay(void){
 
     glBegin(GL_TRIANGLES);
     glVertex2i(1035,265);
-    glVertex2i(1037,255);
+    glVertex2i(1037,260);
     glVertex2i(1040,265);
     glEnd();
 
@@ -2948,7 +2961,7 @@ void myDisplay(void){
     circle(837,265,13);
     circle(837,228,16);
 
-    circle(595,215,13);//2 600
+    circle(595,215,13);//2
     circle(620,215,13);
     circle(635,222,13);
     circle(580,222,13);
@@ -2959,7 +2972,7 @@ void myDisplay(void){
     circle(607,265,13);
     circle(607,228,16);
 
-    circle(385,215,13);//3 390
+    circle(385,215,13);//3
     circle(410,215,13);
     circle(425,222,13);
     circle(370,222,13);
@@ -2971,7 +2984,7 @@ void myDisplay(void){
     circle(397,228,16);
     glEnd();
 
-    circle(185,215,13);//4 190
+    circle(185,215,13);//4
     circle(210,215,13);
     circle(225,222,13);
     circle(170,222,13);
@@ -2983,7 +2996,7 @@ void myDisplay(void){
     circle(197,228,16);
     glEnd();
 
-    circle(45,215,13);//5 50
+    circle(45,215,13);//5
     circle(70,215,13);
     circle(85,222,13);
     circle(30,222,13);
@@ -2995,7 +3008,7 @@ void myDisplay(void){
     circle(57,228,16);
     glEnd();
 
-    circle(1445,215,13);//6 210
+    circle(1445,215,13);//6
     circle(1470,215,13);
     circle(1485,222,13);
     circle(1430,222,13);
@@ -3007,30 +3020,112 @@ void myDisplay(void){
     circle(1457,228,16);
     glEnd();
 
-    circle(1025,320,13);//7 1030
-    circle(1050,320,13);
-    circle(1065,327,13);
-    circle(1010,327,13);
-    circle(1017,341,13);
-    circle(1058,341,13);
-    circle(1026,355,13);
-    circle(1049,355,13);
-    circle(1037,370,13);
-    circle(1037,333,16);
+    circle(1025,309,13);//7
+    circle(1050,309,13);
+    circle(1065,316,13);
+    circle(1010,316,13);
+    circle(1017,330,13);
+    circle(1058,330,13);
+    circle(1026,344,13);
+    circle(1049,344,13);
+    circle(1037,359,13);
+    circle(1037,322,16);
     glEnd();
 
-    circle(35,320,13);//7 40
-    circle(60,320,13);
-    circle(75,327,13);
-    circle(20,327,13);
-    circle(27,341,13);
-    circle(68,341,13);
-    circle(36,355,13);
-    circle(59,355,13);
-    circle(47,370,13);
-    circle(47,333,16);
+    circle(35,309,13);//8
+    circle(60,309,13);
+    circle(75,316,13);
+    circle(20,316,13);
+    circle(27,330,13);
+    circle(68,330,13);
+    circle(36,344,13);
+    circle(59,344,13);
+    circle(47,359,13);
+    circle(47,322,16);
     glEnd();
 
+
+    // Traffic light
+    glColor3f(0.35,0.35,0.35);
+    glLineWidth(1);
+    glBegin(GL_QUADS);
+    glVertex2i(510,178);
+    glVertex2i(510,265);
+    glVertex2i(517,265);
+    glVertex2i(517,178);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glVertex2i(558,260);
+    glVertex2i(558,315);
+    glVertex2i(563,315);
+    glVertex2i(563,260);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glVertex2i(407,252);
+    glVertex2i(407,315);
+    glVertex2i(413,315);
+    glVertex2i(413,252);
+    glEnd();
+
+    glBegin(GL_QUADS); //
+    glVertex2i(517,245);
+    glVertex2i(517,255);
+    glVertex2i(525,265);
+    glVertex2i(525,255);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glVertex2i(540,305);
+    glVertex2i(540,310);
+    glVertex2i(558,310);
+    glVertex2i(558,305);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glVertex2i(399,295);
+    glVertex2i(399,300);
+    glVertex2i(407,310);
+    glVertex2i(407,305);
+    glEnd();
+
+    glBegin(GL_QUADS); //
+    glVertex2i(520,255);
+    glVertex2i(520,230);
+    glVertex2i(525,235);
+    glVertex2i(525,255);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glVertex2i(540,305);
+    glVertex2i(540,285);
+    glVertex2i(548,285);
+    glVertex2i(548,305);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glVertex2i(398,277);
+    glVertex2i(398,300);
+    glVertex2i(404,302);
+    glVertex2i(404,283);
+    glEnd();
+
+    glColor3f(1,0,0); // Red light
+    circle(522.5,255,2);
+    circle(544,305,2);
+    circle(401,296,2);
+
+    glColor3f(1,1,0); // Yellow light
+    circle(522.5,245,2);
+    circle(544,297,2);
+    circle(401,291,2);
+
+    glColor3f(0,1,0); // Green light
+    circle(522.5,235,2);
+    circle(544,290,2);
+    circle(401,286,2);
+    glEnd();
     glFlush();
 }
 void myInit (void){
