@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1755124400 source:d:\aiub sems\glut\roadsidecityview\main.cpp
+1769541068 source:d:\web tech\computer-graphics-projects\city view project\main.cpp
 	<windows.h>
 	<GL/gl.h>
 	<GL/glut.h>
@@ -899,12 +899,4 @@
 
 1526093416 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\math.h
 	<crtdefs.h>
-
-1770305789 source:d:\web tech\computer-graphics-projects\roadsidecityview\main.cpp
-	<windows.h>
-	<GL/gl.h>
-	<GL/glut.h>
-	<stdio.h>
-	<math.h>
-	<iostream>
 

@@ -31,16 +31,25 @@ void circle(float x, float y , float r ){
 	glEnd();
 }
 
-void myDisplay(void){
-    glClear (GL_COLOR_BUFFER_BIT);
-    glColor3f(0.529,0.807,0.922);
+void sky(){
     glBegin(GL_QUADS);
     glVertex2i(0,320);
     glVertex2i(0,750);
     glVertex2i(1500,750);
     glVertex2i(1500,320);
     glEnd();
+}
+void water(){
+    //water
 
+    glBegin(GL_QUADS);
+    glVertex2i(0,90);
+    glVertex2i(0,0);
+    glVertex2i(1500,0);
+    glVertex2i(1500,90);
+    glEnd();
+}
+void grass(){
     //grass
     glColor3f(0.05,0.8,0.31);
     glBegin(GL_QUADS);
@@ -63,7 +72,8 @@ void myDisplay(void){
     glVertex2i(1500,320);
     glVertex2i(1500,260);
     glEnd();
-
+}
+void background_biuldings(){
     //background buildings
     //glColor3f(0.015,0.55,0.24);
     //glColor3f(0.4,0.69,0.57);
@@ -166,7 +176,8 @@ void myDisplay(void){
     glVertex2i(870,510);
     glVertex2i(880,500);
     glEnd();
-
+}
+void road(){
     //road
     glColor3f(0.51,0.51,0.51);
     glBegin(GL_QUADS);
@@ -349,7 +360,8 @@ void myDisplay(void){
     glVertex2i(535,195);
     glVertex2i(575,195);
     glEnd();
-
+}
+void footpath(){
     //foot path bottom
     glColor3f(1,0.75,0.29);
     glBegin(GL_QUADS);
@@ -405,7 +417,8 @@ void myDisplay(void){
     glVertex2i(0,125);
     glVertex2i(1500,125);
     glEnd();
-
+}
+void sideRelling(){
     //side relling
     glColor3f(0.36,0.35,0.35);
     glLineWidth(4);
@@ -521,7 +534,8 @@ void myDisplay(void){
     glVertex2i(1460,115);
     glVertex2i(1460,130);
     glEnd();
-
+}
+void sideseats(){
     //side seat
     glBegin(GL_QUADS);//1
     glVertex2i(730,150);
@@ -577,16 +591,8 @@ void myDisplay(void){
     glVertex2i(1415,150);
     glVertex2i(1415,145);
     glEnd();
-
-    //water
-    glColor3f(0.165,0.478,0.722);
-    glBegin(GL_QUADS);
-    glVertex2i(0,90);
-    glVertex2i(0,0);
-    glVertex2i(1500,0);
-    glVertex2i(1500,90);
-    glEnd();
-
+}
+void building1(){
     //building 1 //Center back House
     glColor3f(0.69,0.69,0.498);//body
     glBegin(GL_QUADS);
@@ -759,7 +765,8 @@ void myDisplay(void){
     glVertex2i(727,428);
     glVertex2i(727,415);
     glEnd();
-
+}
+void building2(){
     //building 2 //Center-Right house
     glColor3f(0.788,0.76,0.6);
     glBegin(GL_QUADS);
@@ -971,7 +978,8 @@ void myDisplay(void){
     glVertex2i(997,263);
 
     glEnd();
-
+}
+void building3(){
     //building 3 //Center middle house
     glColor3f(0.14,0.26,0.41);
     glBegin(GL_QUADS);
@@ -1123,7 +1131,8 @@ void myDisplay(void){
     glVertex2i(855,325);
     glVertex2i(855,300);
     glEnd();
-
+}
+void building4(){
     //building 4 //Center front house
     glColor3f(0.93,0.88,0.77);
     glBegin(GL_QUADS);
@@ -1277,8 +1286,9 @@ void myDisplay(void){
     glVertex2i(875,425);
     glVertex2i(885,410);
     glEnd();
-
-    //building 5 (Left back house)
+}
+void building5(){
+    //building 5 (Left back house) Mascot industries
     glColor3f(0.86,0.86,0.86);
     glBegin(GL_QUADS);
     glVertex2i(40,285);
@@ -1861,8 +1871,9 @@ void myDisplay(void){
     char text1[]="Mascot Industries Limited";
     Sprint(180,632,text1);
     glEnd();
-
-    //building 6 //Black House Left
+}
+void building6(){
+    //building 6 //deep green House Left
     //glColor3f(0.322,0.318,0.318);
     glColor3f(0.17,0.29,0.2);
     glBegin(GL_QUADS);
@@ -2155,8 +2166,9 @@ void myDisplay(void){
     glVertex2i(265,375);
     glVertex2i(255,375);
     glEnd();
-
-    //building 7 (Right corner)
+}
+void building7(){
+    //building 7 (Right corner brown color)
     glColor3f(0.45,0.29,0.157);
     glBegin(GL_QUADS);
     glVertex2i(1405,265);
@@ -2524,7 +2536,8 @@ void myDisplay(void){
     glVertex2i(1452,265);
     glVertex2i(1452,299);
     glEnd();
-
+}
+void building8(){
     //building 8 (Hospital)
     glColor3f(0.96,0.96,0.96);//white
     glBegin(GL_QUADS);
@@ -2763,8 +2776,9 @@ void myDisplay(void){
     char text[] = "HOSPITAL";
     Sprint(1225,377,text);
     glEnd();
-
-    glColor3f(0.51,0.13,0.004);//tree
+}
+void trees(){
+    //tree
     glBegin(GL_QUADS);//1
     glVertex2i(830,160);
     glVertex2i(830,210);
@@ -3043,10 +3057,10 @@ void myDisplay(void){
     circle(47,359,13);
     circle(47,322,16);
     glEnd();
-
-
+}
+void trafficlight(){
     // Traffic light
-    glColor3f(0.35,0.35,0.35);
+
     glLineWidth(1);
     glBegin(GL_QUADS);
     glVertex2i(510,178);
@@ -3126,6 +3140,87 @@ void myDisplay(void){
     circle(544,290,2);
     circle(401,286,2);
     glEnd();
+}
+
+void myDisplay(void){
+    glClear (GL_COLOR_BUFFER_BIT);
+
+    glPushMatrix();
+    glColor3f(0.529,0.807,0.922);
+    sky();
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.165,0.478,0.722);
+    water();
+    glPopMatrix();
+
+    glPushMatrix();
+    grass();
+    glPopMatrix();
+
+    glPushMatrix();
+    background_biuldings();
+    glPopMatrix();
+
+    glPushMatrix();
+    road();
+    glPopMatrix();
+
+    glPushMatrix();
+    footpath();
+    glPopMatrix();
+
+    glPushMatrix();
+    sideRelling();
+    glPopMatrix();
+
+    glPushMatrix();
+    sideseats();
+    glPopMatrix();
+
+    glPushMatrix();
+    building1();
+    glPopMatrix();
+
+    glPushMatrix();
+    building2();
+    glPopMatrix();
+
+    glPushMatrix();
+    building3();
+    glPopMatrix();
+
+    glPushMatrix();
+    building4();
+    glPopMatrix();
+
+    glPushMatrix();
+    building5();
+    glPopMatrix();
+
+    glPushMatrix();
+    building6();
+    glPopMatrix();
+
+    glPushMatrix();
+    building7();
+    glPopMatrix();
+
+    glPushMatrix();
+    building8();
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.35,0.35,0.35);
+    trafficlight();
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.51,0.13,0.004);
+    trees();
+    glPopMatrix();
+
     glFlush();
 }
 void myInit (void){
